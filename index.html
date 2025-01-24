@@ -9,6 +9,10 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-127649772-1');
 	</script>
+	<link rel="manifest" href="manifest.json" />
+	<link rel="icon" href="icon-200.png" />
+
+
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,5 +126,12 @@
 
 	<script src="js/particles.js"></script>
 	<script src="js/app.js"></script>
+	<!-- Register the app's service worker. -->
+	<script>
+		if ("serviceWorker" in navigator) {
+		navigator.serviceWorker.register("sw.js");
+		}
+	</script>
+	
 </body>
 </html>
